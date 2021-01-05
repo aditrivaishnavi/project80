@@ -1,0 +1,93 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+       <span>1. </span>
+        <input type = "text" id = "c1" placeholder = "Input box 1">
+        <br><br>
+
+        <span>2. </span>
+        <input type = "text" id = "c2" placeholder = "Input box 2">
+        <br><br>
+
+        <span>3. </span>
+        <input type = "text" id = "c3" placeholder = "Input box 3">
+        <br><br>
+
+        <span>4. </span>
+        <input type = "text" id = "c4" placeholder = "Input box 4">
+        <br><br>
+
+        <span>5. </span>
+        <input type = "text" id = "c5" placeholder = "Input box 5">
+        <br><br>
+
+        <span>6. </span>
+        <input type = "text" id = "c6" placeholder = "Input box 6">
+        <br><br>
+
+        <button onclick = "getPara1()"> Join </button>
+        <br><br>
+
+        <div id = "para1"></div>
+        <br><br><br><br>
+        
+        <br><br><br>
+
+        <span>1. </span>
+        <input type = "text" id = "d1" placeholder = "Input box 1">
+        <br><br>
+
+        <span>2. </span>
+        <input type = "text" id = "d2" placeholder = "Input box 2">
+        <br><br>
+
+        <span>3. </span>
+        <input type = "text" id = "d3" placeholder = "Input box 3">
+        <br><br>
+
+        <span>4. </span>
+        <input type = "text" id = "d4" placeholder = "Input box 4">
+        <br><br>
+
+        <span>5. </span>
+        <input type = "text" id = "d5" placeholder = "Input box 5">
+        <br><br>
+
+        <span>6. </span>
+        <input type = "text" id = "d6" placeholder = "Input box 6">
+        <br><br>
+
+        <button onclick = "getPara2()"> Join </button>
+        <br><br>
+
+        <div id = "para2"></div>
+        <br><br><br><br>
+
+
+       
+
+        <script>
+            function getPara1() {
+                var inputs = [];
+
+                for(var i = 1; i <= 6; i++) {
+                    inputs.push(document.getElementById("c" + i).value);
+                }
+
+                document.getElementById("para1").innerHTML = inputs.join(". ");
+            }
+
+            function getPara2() {
+                var inputs = [];
+
+                for(var i = 1; i <= 6; i++) {
+                    inputs.push(document.getElementById("d" + i).value);
+                }
+
+                document.getElementById("para2").innerHTML = inputs.join(". ");
+            }
+        </script>
+    </body>
+</html>
